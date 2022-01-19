@@ -26,7 +26,7 @@ class SegmentControllerViewController: UIViewController {
         imageView.center = view.center
         view.addSubview(imageView)
 
-        //Создаем сегмент
+        //Создаем сегмент 
         segment = UISegmentedControl(items: segmentArray)
         segment.frame = CGRect(x: 70, y: 600, width: 250, height: 30)
         segment.selectedSegmentIndex = 0

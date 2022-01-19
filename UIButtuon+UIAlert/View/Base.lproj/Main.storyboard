@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="1662" y="88"/>
         </scene>
-        <!--Segment Controller View Controller-->
+        <!--Text Field View Controller-->
         <scene sceneID="kSo-iw-nGS">
             <objects>
-                <viewController id="9u5-jL-Pfq" customClass="SegmentControllerViewController" customModule="UIButtuon_UIAlert" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9u5-jL-Pfq" customClass="TextFieldViewController" customModule="UIButtuon_UIAlert" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sZH-MD-s7l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
