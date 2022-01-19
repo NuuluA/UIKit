@@ -16,6 +16,7 @@
 		1B2A01782796C8BA00713D69 /* UISwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2A01772796C8BA00713D69 /* UISwitchViewController.swift */; };
 		1B2A017D2797253F00713D69 /* UISliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2A017C2797253F00713D69 /* UISliderViewController.swift */; };
 		1B2A017F279725B700713D69 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1B2A017E279725B700713D69 /* music.mp3 */; };
+		1B2A01812798331C00713D69 /* SegmentControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2A01802798331C00713D69 /* SegmentControllerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1B2A01772796C8BA00713D69 /* UISwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISwitchViewController.swift; sourceTree = "<group>"; };
 		1B2A017C2797253F00713D69 /* UISliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderViewController.swift; sourceTree = "<group>"; };
 		1B2A017E279725B700713D69 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		1B2A01802798331C00713D69 /* SegmentControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControllerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				1B2A01672796C42700713D69 /* UIButtonUIAlertViewController.swift */,
 				1B2A01772796C8BA00713D69 /* UISwitchViewController.swift */,
 				1B2A017C2797253F00713D69 /* UISliderViewController.swift */,
+				1B2A01802798331C00713D69 /* SegmentControllerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			files = (
 				1B2A01782796C8BA00713D69 /* UISwitchViewController.swift in Sources */,
 				1B2A01682796C42700713D69 /* UIButtonUIAlertViewController.swift in Sources */,
+				1B2A01812798331C00713D69 /* SegmentControllerViewController.swift in Sources */,
 				1B2A01642796C42700713D69 /* AppDelegate.swift in Sources */,
 				1B2A017D2797253F00713D69 /* UISliderViewController.swift in Sources */,
 				1B2A01662796C42700713D69 /* SceneDelegate.swift in Sources */,
