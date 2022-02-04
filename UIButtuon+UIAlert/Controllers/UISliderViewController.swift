@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class UISliderViewController: UIViewController {
+final class UISliderViewController: UIViewController {
     
     //Обявляем UI элемент
     var button = UIButton()

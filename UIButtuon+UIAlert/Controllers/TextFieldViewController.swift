@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TextFieldViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate {
+ final class TextFieldViewController: UIViewController, UITextFieldDelegate {
     
     let textField: UITextField = {
        let textField = UITextField()
@@ -24,9 +24,31 @@ class TextFieldViewController: UIViewController, UITextViewDelegate, UITextField
         button.addTarget(self, action: #selector(shareAction), for: .touchUpInside)
         return button
     }()
+    
+    let label: UILabel = {
+       let label = UILabel()
+        label.text = "Hello"
+        label.textColor = .black
+        return label
+    }()
 
+    let labelButton: UIButton = {
+       let labelButton = UIButton()
+        labelButton.setTitle("Change", for: .normal)
+        labelButton.backgroundColor = .gray
+        labelButton.layer.cornerRadius = 9
+        labelButton.addTarget(self, action: #selector(changeLabel), for: .touchUpInside)
+        return labelButton
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.addSubview(labelButton)
+        labelButton.frame = CGRect(x: 150, y: 300, width: 100, height: 44)
+        
+        view.addSubview(label)
+        label.frame = CGRect(x: 160, y: 200, width: 150, height: 30)
 
         textField.frame = CGRect(x: 0, y: 0, width: 300, height: 44)
         textField.center = view.center
@@ -39,15 +61,27 @@ class TextFieldViewController: UIViewController, UITextViewDelegate, UITextField
     }
     
     //Свернуть клавиатуру когда нажимаешь на клавишу "return"
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        textField.resignFirstResponder()
+//        return true
+//    }
     
     //Создали активиту контроллер, который снизу появляется экран чтобы разшарить данные...
     @objc private func shareAction() {
         let activityController = UIActivityViewController(activityItems: [textField.text ?? ""], applicationActivities: nil)
         present(activityController, animated: true, completion: nil)
+    }
+    
+    @objc private func changeLabel() {
+        let changeLabel = textField.text
+        label.text = changeLabel
+    }
+    
+    //Свернуть клавиатуру когда нажимаешь на любую точку экрана
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if touches.first != nil {
+            view.endEditing(true)
+        }
     }
 
 }

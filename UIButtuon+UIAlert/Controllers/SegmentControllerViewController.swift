@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SegmentControllerViewController: UIViewController {
+final class SegmentControllerViewController: UIViewController {
     
     var segment = UISegmentedControl()
     var imageView = UIImageView()
