@@ -10,11 +10,11 @@ import UIKit
 final class TextViewViewController: UIViewController {
 
     var textView = UITextView()
+    var textViewArray = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         createTextView()
-        
     }
     
     private func createTextView() {
