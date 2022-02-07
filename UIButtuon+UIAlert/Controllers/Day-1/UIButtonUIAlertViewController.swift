@@ -22,14 +22,22 @@ class UIButtonUIAlertViewController: UIViewController {
     private func buttons() {
         button = UIButton(type: .roundedRect)
         button.frame = CGRect(x: 150, y: 300, width: 100, height: 44)
-        button.tintColor = .black
-        button.setTitle("Press", for: .normal)
+        button.tintColor = .white
+        button.layer.cornerRadius = button.frame.height*0.5
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowRadius = 6
+        button.layer.shadowOpacity = 1.2
+        button.layer.shadowOffset = .zero
+        button.backgroundColor = .darkGray
+        button.setTitle("UIAlert", for: .normal)
         button.addTarget(self, action: #selector(uiAlert), for: .touchUpInside)
         
         button2 = UIButton(type: .roundedRect)
         button2.frame = CGRect(x: 150, y: 500, width: 100, height: 44)
-        button2.tintColor = .black
-        button2.setTitle("Press", for: .normal)
+        button2.tintColor = .white
+        button2.layer.cornerRadius = button.frame.height*0.5
+        button2.backgroundColor = .darkGray
+        button2.setTitle("ActionSheet", for: .normal)
         button2.addTarget(self, action: #selector(actionSheet), for: .touchUpInside)
     }
     
