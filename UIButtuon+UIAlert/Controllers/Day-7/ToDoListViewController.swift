@@ -28,7 +28,9 @@ class ToDoListViewController: UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
                                                             target: self,
                                                             action: #selector(addItem))
+        
         ToDoListViewController.items = UserDefaults.standard.stringArray(forKey: "save") ?? []
+        
     }
     
     override func viewDidLayoutSubviews() {
